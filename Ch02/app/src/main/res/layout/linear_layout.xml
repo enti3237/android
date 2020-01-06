@@ -3,12 +3,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#343434">
+    android:background="#3B9696">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="리니어 레이아웃 실습"/>
+        android:text="@string/name"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -23,7 +23,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#cddc39">
+        android:background="#1E470D">
 
         <Button
             android:layout_width="wrap_content"

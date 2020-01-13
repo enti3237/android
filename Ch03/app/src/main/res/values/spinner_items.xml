@@ -3,6 +3,7 @@
 
     <string-array name="cities">
 
+        <item>도시를 선택하세요</item>
         <item>서울</item>
         <item>대전</item>
         <item>대구</item>
@@ -13,7 +14,7 @@
 
     <string-array name="animals">
 
-        <item>선택</item>
+        <item>동물을 선택하세요</item>
         <item>호랑이</item>
         <item>사자</item>
         <item>코알라</item>

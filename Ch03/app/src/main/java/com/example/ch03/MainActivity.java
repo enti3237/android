@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         spnn1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(cities[position] + " 선택되었습니다");
+                Toast.makeText(MainActivity.this, "선택한 도시 : " + spnn1.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
             }
 
             @Override

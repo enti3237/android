@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity 실습하기"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/btn_sub1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubActibity1 이동"/>
+
+    <Button
+        android:id="@+id/btn_sub2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubActibity2 이동"/>
+
+    <Button
+        android:id="@+id/btn_sub3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubActibity3 로 데이터 전달"/>
+
+    <Button
+        android:id="@+id/btn_sub4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubActibity4 로 데이터 수신"/>
+
+</LinearLayout>

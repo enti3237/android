@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#FFF9C0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프래그먼트 실습"
+        />
+
+    <fragment
+        android:id="@+id/frag_first"
+        class="kr.co.ch05.fragment.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/frag_second"
+        class="kr.co.ch05.fragment.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+    <fragment
+        android:id="@+id/frag_third"
+        class="kr.co.ch05.fragment.ThirdFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+
+
+</LinearLayout>

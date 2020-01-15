@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_tit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TabActivity"
+        android:textSize="20dp"
+
+        />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFD9D9"
+        android:layout_below="@id/txt_tit"
+        android:layout_above="@+id/linear_layout"
+    />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btn_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="탭1"
+            />
+        <Button
+            android:id="@+id/btn_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="탭2"
+            />
+        <Button
+            android:id="@+id/btn_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="탭3"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -36,4 +36,36 @@
         android:layout_height="wrap_content"
         android:text="SubActibity4 로 데이터 수신"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="암시적 인텐트 요청"
+        android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="implicitIntentListener"
+        android:text="전화걸기"/>
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="implicitIntentListener"
+        android:text="웹검색"/>
+
+    <Button
+        android:id="@+id/btn_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="implicitIntentListener"
+        android:text="지도검색"/>
+
+
+
+
+
 </LinearLayout>

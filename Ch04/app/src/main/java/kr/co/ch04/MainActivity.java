@@ -2,7 +2,9 @@ package kr.co.ch04;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.SearchManager;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,7 +31,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnsub3 = findViewById(R.id.btn_sub3);
         btnsub4 = findViewById(R.id.btn_sub4);
 
-
         // 직접 버튼에 대한 이벤트 리스터 구현
         btnsub1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 // 명시적 인텐트 선언 (이동)
                 Intent intent = new Intent(MainActivity.this, Sub1Activity.class);
                 startActivity(intent);
-
             }
         });
 
@@ -51,7 +51,46 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         // 로그출력 : i - 정보출력 / d - 디버깅 / e - 에러확인
         Log.i("life", "onCreate...");
+
+    } // onCreate end;;;
+
+
+    public void implicitIntentListener (View v){
+        switch (v.getId()){
+
+            case R.id.btn_call:
+
+                // 암시적 인텐트 실행
+                Intent callIntent = new Intent();
+                callIntent.setAction(Intent.ACTION_CALL);
+                callIntent.setData(Uri.parse("tel:01011111112"));
+                startActivity(callIntent);
+                break;
+
+            case R.id.btn_search:
+
+                Intent searchIntent = new Intent();
+                searchIntent.setAction(Intent.ACTION_WEB_SEARCH);
+                searchIntent.putExtra(SearchManager.QUERY, "안드로이드");
+                startActivity(searchIntent);
+                break;
+
+            case R.id.btn_map:
+
+                Intent mapIntent = new Intent();
+                mapIntent.setAction(Intent.ACTION_VIEW);
+                mapIntent.setData(Uri.parse("geo:35.1543641,129.0594304"));
+                startActivity(mapIntent);
+                break;
+
+
+
+        }
+
+
     }
+
+
 
     private View.OnClickListener btnSub2Listner = new View.OnClickListener() {
         @Override
@@ -61,7 +100,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // 명시적 인텐트 선언 (이동)
             Intent intent = new Intent(MainActivity.this, Sub2Activity.class);
             startActivity(intent);
-
         }
     };
 
@@ -86,15 +124,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent_sub4 = new Intent(getBaseContext(), Sub4Activity.class);
                 startActivity(intent_sub4);
 
-
                 break;
-
         }
-
     }
-
-
-
 
     @Override
     protected void onStart() {

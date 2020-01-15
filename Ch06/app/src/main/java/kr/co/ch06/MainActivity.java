@@ -11,6 +11,7 @@ import android.widget.Button;
 import java.util.Map;
 
 import kr.co.ch06.drawer.DrawerLayoutActivity;
+import kr.co.ch06.viewpager.ViewPagerActivity;
 
 /*
     날짜 : 2020-01-15
@@ -35,21 +36,21 @@ public class MainActivity extends AppCompatActivity {
         btnListView = findViewById(R.id.btn_list_view);
         btnRecyclerView = findViewById(R.id.btn_recycler_view);
 
+        //서랍처럼 여닫기 - 좌우방향만 가능함
         btnDrawerLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 Intent intent = new Intent(MainActivity.this, DrawerLayoutActivity.class);
                 startActivity(intent);
-
             }
         });
 
+        //슬라이드뷰 (스스로 움직이진 않음)
         btnViewPager.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
+                Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
+                startActivity(intent);
             }
         });
 

@@ -5,12 +5,15 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
 import java.util.Map;
 
 import kr.co.ch06.drawer.DrawerLayoutActivity;
+import kr.co.ch06.listview.ListViewActivity;
+import kr.co.ch06.recyclerview.RecyclerViewActivity;
 import kr.co.ch06.viewpager.ViewPagerActivity;
 
 /*
@@ -58,12 +61,18 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
+
             }
         });
 
         btnRecyclerView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
 
             }
         });

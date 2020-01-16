@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".drawer.DrawerLayoutActivity" />
         <activity android:name=".viewpager.ViewPagerActivity" />
+        <activity android:name=".listview.ListViewActivity" />
+        <activity android:name=".recyclerview.RecyclerViewActivity" />
     </application>
 
 </manifest>

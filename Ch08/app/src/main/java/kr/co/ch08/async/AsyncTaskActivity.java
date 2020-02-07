@@ -41,7 +41,8 @@ public class AsyncTaskActivity extends AppCompatActivity {
 
                 Toast.makeText(AsyncTaskActivity.this, "버튼 클릭!", Toast.LENGTH_SHORT).show();
 
-                // 병행작업을 위해 필요한 명령어... 
+                // 현재 asyncTask는 병렬처리가 기본이 아니라 병렬로 처리하고 싶으면 이하의 명령어를 사용해야 함
+                // 이래도 3~4개 정도 밖에 되지 않는다...
                 ProgressAsyncTask asyncTask = new ProgressAsyncTask(AsyncTaskActivity.this, progress);
                 asyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
